@@ -40,13 +40,11 @@ function App() {
     <>
       <Container>
         <Title>USUÁRIOS</Title>
-        <Form />
-        <Grid users={users} />
+        <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
+        <Grid users={users} setUsers={setUsers} setOnEdit={setOnEdit} />
       </Container>
       <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
       <GlobalStyle />
-
-      <h3>CONTINUAR DE 28:00 - https://www.youtube.com/watch?v=voXTVTW73E8</h3>
     </>
   );
 }
